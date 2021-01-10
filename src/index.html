@@ -5,35 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Поиск изображений</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <header class="hero-header">
-      <form class="search-form" id="search-form" onsubmit="return false">
-        <input
-          class="form-input js-input-search"
-          type="text"
-          name="query"
-          autocomplete="off"
-          placeholder="Search images..."
-        />
-        <!-- <button type="submit" class="button">Искать</button> -->
-      </form>
+    <header>
+      <div class="container-header">
+        <p class="header-text">Search different pictures from Pixabay</p>
+              <form class="search-form js-search-form" id="search-form">
+   
+                <input
+                  type="text"  
+                  name="query" 
+                  id="searchQuery" 
+                  placeholder="Looking for..." 
+                  autocomplete="off" />
+               
+                <button type="submit" class="btn btn-primary mb-2">Searh</button>
+              </form>
+    </div>
+    </div>
     </header>
+
     <ul class="gallery">
       <!-- Список <li> с карточками изображений -->
     </ul>
 
-    <footer class="footer">
-      <button type="button" class="button button-more" data-action="load-more">
-        <span
-          class="spinner-border spinner-border-sm spinner is-hidden"
-          role="status"
-          aria-hidden="true"
-        ></span>
-
-        <span class="label">Показать ещё</span>
-      </button>
-    </footer>
+<div id="sentinel"></div>
   </body>
 </html>
